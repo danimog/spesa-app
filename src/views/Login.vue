@@ -38,21 +38,6 @@
 
 <h1 class="my-5">Ciao 👋🏼</h1>
 
-<!-- <div class="p-6 max-w-md mx-auto bg-blue-200 rounded-xl shadow-md flex items-center space-x-4">
-  
-    <div class="grid grid-flow-col auto-cols-max">
-      <label for="email">Email </label>
-      <input type="text" name="email" v-model="email" />
-    </div>
-    <div class="grid grid-flow-col auto-cols-max">
-      <label for="password">Password </label>
-      <input type="password" name="password" v-model="password" />
-    </div>
-    <div class="grid grid-flow-col auto-cols-max">
-      
-      <button @click="signIn" class="w-50 p-3 flex items-center justify-center rounded-md bg-blue-700 text-white ring-0" type="submit">Login</button>
-    </div>    
-</div> -->
 
 <div class="w-full max-w-sm p-6 bg-blue-200 rounded-md mx-auto">
   <div class="md:flex md:items-center mb-6">

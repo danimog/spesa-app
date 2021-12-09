@@ -22,4 +22,7 @@ const app = createApp(App);
 app.use(router);
 app.mount("#app");
 
-export default firebase.firestore();
+
+// var db = firebase.firestore();
+
+//export const db = firebase.firestore();
