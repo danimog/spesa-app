@@ -33,23 +33,58 @@
 </script>
 
 <template>
-<h1 style="color:red;">LOGIN</h1>
-<h3>Ciao 👋🏼</h3>
 
-<div class="p-6 max-w-md mx-auto bg-blue-200 rounded-xl shadow-md flex items-center space-x-4">
-    <div>
-        <label for="email">Email</label>
-        <input type="text" name="email" v-model="email" />
-    </div>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" name="password" v-model="password" />
-    </div>
-    <div>
-        <!-- <button class="bg-red-300">Invia!</button> -->
-        <button @click="signIn" class="flex items-center justify-center rounded-md bg-blue-700 text-white ring-0" type="submit">Login</button>
+<hr class="my-4" />
 
+<h1 class="my-5">Ciao 👋🏼</h1>
+
+<!-- <div class="p-6 max-w-md mx-auto bg-blue-200 rounded-xl shadow-md flex items-center space-x-4">
+  
+    <div class="grid grid-flow-col auto-cols-max">
+      <label for="email">Email </label>
+      <input type="text" name="email" v-model="email" />
     </div>
+    <div class="grid grid-flow-col auto-cols-max">
+      <label for="password">Password </label>
+      <input type="password" name="password" v-model="password" />
+    </div>
+    <div class="grid grid-flow-col auto-cols-max">
+      
+      <button @click="signIn" class="w-50 p-3 flex items-center justify-center rounded-md bg-blue-700 text-white ring-0" type="submit">Login</button>
+    </div>    
+</div> -->
+
+<div class="w-full max-w-sm p-6 bg-blue-200 rounded-md mx-auto">
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <label class="block text-black-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="email">
+        Email
+      </label>
+    </div>
+    <div class="md:w-2/3">
+      <input class="bg-white-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-300" id="email" type="text" v-model="email">
+    </div>
+  </div>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <label class="block text-black-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="password">
+        Password
+      </label>
+    </div>
+    <div class="md:w-2/3">
+      <input class="bg-white-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-300" id="password" type="password" v-model="password">
+    </div>
+  </div>
+ 
+  <div class="md:flex md:items-center">
+    <div class="md:w-1/3"></div>
+    <div class="md:w-2/3">
+      <button @click="signIn" class="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+        Login
+      </button>
+    </div>
+  </div>
 </div>
+
 
 </template>

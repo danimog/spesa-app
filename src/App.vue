@@ -21,14 +21,12 @@
  <template>
   <div>
     <nav>
-      <router-link to="/"> Home </router-link> |
-      
-      <span v-if="isLoggedIn"
-        >>
-        <button @click="signOut">Logout</button>
+      <router-link class="rounded-full bg-red-600 text-white p-3 mr-10" to="/"> Home </router-link>
+      <span v-if="isLoggedIn">
+        <button class="rounded-full bg-red-600 text-white p-3" @click="signOut">Logout</button>
       </span>
       <span v-else>
-        <router-link to="/login"> Login </router-link>
+        <router-link class="rounded-full bg-red-600 text-white p-3" to="/login"> Login </router-link>
       </span>
     </nav>
     <router-view />
