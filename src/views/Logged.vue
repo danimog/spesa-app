@@ -1,6 +1,7 @@
 <script setup>
   import { ref, watchEffect } from 'vue' // used for conditional rendering
   import firebase from 'firebase'
+  import SpesaCreate from '../components/SpesaCreate'
   
   const isLoggedIn = ref(true)
   // runs after firebase is initialized
@@ -16,7 +17,7 @@
 
 <template>
     <div v-if="isLoggedIn">
-        Utente autenticato!
+        <SpesaCreate />
     </div>
     <div v-else>
         Vai alla pagina di login!
