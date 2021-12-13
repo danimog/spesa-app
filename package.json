@@ -4,10 +4,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "vite build && firebase deploy"
   },
   "dependencies": {
     "firebase": "^8.10.0",
+    "firebase-tools": "^9.23.1",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12"
   },

@@ -2,7 +2,7 @@
     <div>
         <hr class="mt-10">
 
-        <table class="table-fixed  mx-auto border">
+        <table class="table-fixed mx-auto border w-full max-w-sm">
             <thead>
             <tr>
                 <th class="w-1/10 px-4 py-2 border" scope="col" > </th>
